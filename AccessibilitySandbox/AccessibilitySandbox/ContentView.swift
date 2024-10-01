@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(.character)
-            .accessibilityHidden(true)
+        VStack {
+            Text("Your score is")
+            Text("100")
+                .font(.title)
+        }
+        .accessibilityElement(children: .combine)
     }
 }
 
