@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(decorative: "character")
+        Image(.character)
+            .accessibilityHidden(true)
     }
 }
 
