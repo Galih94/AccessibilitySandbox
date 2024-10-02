@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello world")
+        Button("John Fitzgerald Kennedy") {
+            print("button tapped")
+        }
+        .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
     }
 }
 
